@@ -23,7 +23,7 @@ Takođe manuelno je moguće birati modove pomoću 3 donja prekidača u prvom stu
 -Ovaj task nam sluzi iskljucivo za proveru da li je pritisnut neki od donja 3 taster prvog stubca. Ukoliko jeste palimo skroz donju diodu drugog stubca kao indikaciju da je sistem upaljen, i ispisujemo mod i vrednost senzora za taj mod na 7seg displej.
 
 # prvSerialReceiveTask_0
-Prijem podataka sa kanala 0 serijske koomunikacije. 00 je pocetak poruke ff kraj. Podaci između se smeštaju u bafer niz i zatim se prilagođuju za dalji ispis na 7seg displeju. Takođe se porede primljeni podaci sa granicama sigurnog rada jer ako je neki parametar povišen ili snižen sistem je u kritičnom stanju.
+Prijem podataka sa kanala 0 serijske koomunikacije. 00 je početak poruke ff kraj. Podaci između se smeštaju u bafer niz i zatim se prilagođuju za dalji ispis na 7seg displeju. Takođe se porede primljeni podaci sa granicama sigurnog rada jer ako je neki parametar povišen ili snižen sistem je u kritičnom stanju.
 
 # prvSerialReceiveTask_1
 Prijem podataka sa kanala 1 serijske koomunikacije. ef je pocetak poruke 0d kraj. Podaci između se smestaju u bafer1 niz i zatim uporediti koji je ascii karakter primljen da bi se odredio mod. Na osnovu moda će se ispisivati vrednosti senzora.
