@@ -1,5 +1,5 @@
 # KONTROLA SENZORA MOTORA
-Potrebno je izsimulirati pristizanje vredosti 5 senzora motora automobila i nadzirati da one budu u nekim granicama.
+Potrebno je izsimulirati pristizanje vrednosti 5 senzora motora automobila i nadzirati da one budu u nekim granicama.
 -Simulirati vrednosti senzora pomocu serijske komunikacije AdvUniCom softerom. Takođe korišćene periferije LED bar plus i 7seg displej
 
 # PERIFERIJE
@@ -11,9 +11,9 @@ Prilikom pokretanja sedmosegmentnog displeja kucati komandu Seg7_Mux.exe 10
 # KAKO TESTIRATI SISTEM
 Pokrenuti kanal 0 i uneti 5 vrednosti senzora u hex formatu (\00\62\55\97\01\02\ff npr.), to uneti u polje pored ok , čekirati kvadrat
 auto pored i pritisnuti OK da se vrednosti automatski šalju. Ukoliko su vrednosti u granicama treći stubac LED bara neće biti uključen,a
-ako nisu zatrepereće i javiti da je sistem u kritičnom stanju (ako je temperatura sa senzora rashladne tečnosti veća ili jednaka 110 stepeni, temperatura vazduha sa senzora usisne grane veća ili jednaka 90 stepeni, ako su obrtaji manji ili jedaki od 1500, odnosno veći ili jedaki 3000, ako je napon na senzoru opterećenja papučice veći ili jednak 4v i ako je napon sa senzora pedale gasa veći ili jedak 5V)
+ako nisu zatrepereće i javiti da je sistem u kritičnom stanju (ako je temperatura sa senzora rashladne tečnosti veća ili jednaka 110 stepeni, temperatura vazduha sa senzora usisne grane veća ili jednaka 90 stepeni, ako su obrtaji manji ili jedaki od 1500, odnosno veći ili jedaki 3000, ako je napon na senzoru opterećenja papučice veći ili jednak 4v i ako je napon sa senzora pedale gasa veći ili jednak 5V)
 Pokrenuti kanal 1 i ueti hex komandu za mod. (\ef\4d\0d za MONITOR \ef\53\0d za SPEED i \ef\44\0d za DRIVE) kada se posalju ove naredbe na 7seg displeju će biti ispisani prvo mod pa trenutne vrednost 2 senzora koja odgovaraju modu).
-Takođe manuelno je moguće birati modove pomoću 3 donja prekidača u prvom stupcu i identično ispisivati na 7seg displej. Donja dioda u drugom stupcu je ukljucna kada se upali neki taster, a iskljucena kad se iskljuci.
+Takođe manuelno je moguće birati modove pomoću 3 donja prekidača u prvom stupcu i identično ispisivati na 7seg displej. Donja dioda u drugom stupcu je ukljucena kada se upali neki taster, a iskljucena kad se iskljuci.
 
 
 # OPIS TASKOVA 
