@@ -2,7 +2,7 @@
 Potrebno je izsimulirati pristizanje vrednosti 5 senzora motora automobila i nadzirati da one budu u nekim granicama.
 -Simulirati vrednosti senzora pomocu serijske komunikacije AdvUniCom softerom. Takođe korišćene periferije LED bar plus i 7seg displej
 
-# PERIFERIJE
+# PERIFERIJEk
 -Prilikom pokretanja LED_bars_plus u komandnu liniju ukucati LED_bars_plus.exe rGB, jer je potrebno imati jedan stubac(prvi sa leva) kao ulazni ,a ostala dva stubca izlazni.
 
 -Prilikom pokretanja serijske komunikacije, potrebno je aktivirati dva zasebna kanala AdvUniCom. U komandnu liniju kucati redom komande AdvUniCom.exe 0 , AdvUniCom.exe 1
